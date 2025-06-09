@@ -3,9 +3,6 @@
 # Atualiar os pacotes do linux
 sudo apt update
 
-# Instalar o pgadmin4
-sudo apt install pgadmin4
-
 # Baixar iagem do postgres
 docker pull postgres
 
