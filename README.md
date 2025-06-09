@@ -18,15 +18,21 @@ sudo systemctl enable postgresql
 
 # Excutar scripts no 
 CREATE DATABASE meu_banco;
-## CREATE USER meu_usuario WITH ENCRYPTED PASSWORD 'minha_senha';  
+## Criar usuário
+CREATE USER meu_usuario WITH ENCRYPTED PASSWORD 'minha_senha';  
 
-## GRANT ALL PRIVILEGES ON DATABASE meu_banco TO meu_usuario;  
+## Privilégios
+GRANT ALL PRIVILEGES ON DATABASE meu_banco TO meu_usuario;  
 
-## CREATE DATABASE meu_banco;
+## Crir banco de dados
+CREATE DATABASE meu_banco;
 
-## sudo -i -u postgres
-## psql
-## docker run -d \
+## Executar o postgres
+sudo -i -u postgres
+psql
+
+## Executar pgadmin4 
+docker run -d \
   -p 8080:80 \
   -e PGADMIN_DEFAULT_EMAIL="admin@example.com" \
   -e PGADMIN_DEFAULT_PASSWORD="minha_senha_segura" \
