@@ -35,3 +35,6 @@ docker run -d \
   -e PGADMIN_DEFAULT_PASSWORD="minha_senha_segura" \
   --name pgadmin_container \
   dpage/pgadmin4
+
+## Executar o site
+http://172.171.202.160:5050/login
